@@ -19,7 +19,9 @@ R/ El comando ```free``` muestra la cantidad total de memoria libre y usada en e
 
 2. Ahora, ejecute ```free``` usando algunos argumentos que podrían ser útiles (por ejemplo, ```-m```, para mostrar
 la cantidad total de memoria en megabytes).
+
 https://raw.githubusercontent.com/dareiza/lab-address-spaces/blob/master/imagenes/free.png
+
 /home/dan/Labs/lab-address-spaces/imagenes/free.png
 ¿Cuánta memoria hay en su sistema?
 R/-hay 5851 megas de memoria.
