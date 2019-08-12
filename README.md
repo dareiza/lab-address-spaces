@@ -20,7 +20,7 @@ R/ El comando ```free``` muestra la cantidad total de memoria libre y usada en e
 2. Ahora, ejecute ```free``` usando algunos argumentos que podrían ser útiles (por ejemplo, ```-m```, para mostrar
 la cantidad total de memoria en megabytes).
 
-https://raw.githubusercontent.com/dareiza/lab-address-spaces/master/imagenes/free.png
+(https://raw.githubusercontent.com/dareiza/lab-address-spaces/master/imagenes/free.png)
 
 ¿Cuánta memoria hay en su sistema?
 R/-hay 5851 megas de memoria.
@@ -38,9 +38,11 @@ por lo menos, por una cierta cantidad de tiempo especificada también por línea
 4. Ahora, mientras corra su programa ```memory-user.c```, ejecute la herramienta ```free``` (en una terminal diferente, pero en la misma máquina).
 ¿Cómo cambia el uso total de memoria cuando su programa está corriendo?
 R/ Como se esperaba mientras el programa `memory-user.c` está corriendo al ejecutar free varias veces se pudo notar como se pudo notar como la memoria usada iba en aumento, esto se puede evidenciar en la siguiente imagen.
-/home/dan/Labs/lab-address-spaces/imagenes/freePunto4.png
+(https://raw.githubusercontent.com/dareiza/lab-address-spaces/master/imagenes/freePunto4.png)
+
 ¿Qué pasa cuando se finaliza el programa memory-user (comando kill)?, ¿coinciden los valores con lo que usted esperaba? En efecto ocurrió lo esperado ya que la memoria libre vuelve a aumentar cuando se usa el comando kill.
-/home/dan/Labs/lab-address-spaces/imagenes/kill.png
+(https://raw.githubusercontent.com/dareiza/lab-address-spaces/master/imagenes/kill.png)
+
 Intente esto para diferentes cantidades de uso de memoria. ¿Qué pasa cuando usted usa cantidades de memoria realmente grandes?
 
 5. Ahora veremos una herramienta más conocida como ```pmap```. Invierta algo de tiempo para leer el manual de ```pmap```
@@ -53,7 +55,8 @@ R/ este punto va en conjunto con el 7
 7. Ahora ejecute ```pmap``` en alguno de estos procesos usando varias flags (como ```-X```) para revelar más detalles acerca del proceso.
 ¿Qué puede ver?
 R/ Al usar el flag -d nos trae el tamaño en Kbytes, el Offset y el device, al usar -q podemos ver que a diferencia de usar el pmap sin ningún flag este no nos muestra el total de memoria, por último al usar -XX este nos arrojó toda información que nos provee el kernel la cual se puede ver en la siguiente imagen
-/home/dan/Labs/lab-address-spaces/imagenes/pmap-XX.png
+(https://raw.githubusercontent.com/dareiza/lab-address-spaces/master/imagenes/pmap-XX.png)
+
 ¿Cuántas entidades diferentes conforman un espacio de direcciones moderno, a diferencia de nuestra simple concepción de code/stack/heap?
 
 8. Finalmente, ejecute ```pmap``` para su programa memory-user, con diferentes cantidades de memoria usada.
